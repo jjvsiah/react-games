@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 100px;
+    background-color: #eee;
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    height: 80px;
+    width: 80px;
+    margin: 15px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background-color: #999;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 120px; /* Adjust this padding to reflect sidebar width change */
+}
+
+/* Responsive styles */
+@media (max-width: 1400px) {
+    .sidebar {
+        width: 80px;
+    }
+    .main-content {
+        padding-right: 100px; /* Adjust for smaller sidebar */
+    }
+}
+
+@media (max-width: 800px) {
+    .sidebar {
+        width: 70px; /* Further reduce the sidebar width for smaller screens */
+    }
+    .sidebar .logo {
+        height:50px;
+        width: 50px;
+    }
+    .main-content {
+        padding-right: 80px; /* Adjust padding to match new sidebar width */
+    }
+}

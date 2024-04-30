@@ -1,0 +1,32 @@
+.memory-game {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; 
+  }
+  
+  .top-half {
+    display: flex;
+    flex: 1;
+  }
+  
+  .top-half button {
+    flex: 1;
+    height: 50%; 
+    font-size: 2em;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .bottom-half {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+  }
+  
+  .instruction-box {
+    width: 20px;
+    height: 20px;
+    background-color: #cccccc;
+  }
+  

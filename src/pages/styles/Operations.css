@@ -1,0 +1,29 @@
+.operations-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 100px); 
+  }
+  
+  .primary-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    background: rgb(200, 255, 255);
+  }
+  
+  .section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+  }
+  
+  .section button {
+    margin: 0 5px;
+    padding: 5px 10px;
+  }
+  

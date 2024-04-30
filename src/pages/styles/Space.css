@@ -1,0 +1,34 @@
+.space-game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .game-window {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+  }
+  
+  .shooter {
+    position: absolute;
+    bottom: 0;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+  }
+  
+  .target {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    transition: background-color 0.3s;
+  }
+  
+  .target.destroyed {
+    background-color: transparent;
+  }
+  
