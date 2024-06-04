@@ -7,7 +7,7 @@ function Sidebar() {
     return (
         <div className="sidebar">
         <img src={Logo} alt="Logo" className="logo" /> 
-            <NavLink to="/home">Home</NavLink>
+            <NavLink to="/">Home</NavLink>
             <NavLink to="/operations">Operations</NavLink>
             <NavLink to="/memory">Memory</NavLink>
             <NavLink to="/space">Space</NavLink>

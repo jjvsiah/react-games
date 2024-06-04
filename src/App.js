@@ -17,7 +17,8 @@ function App() {
           <Sidebar />
           <div className="main-content">
             <Routes>
-              <Route path="/home" element={<Dashboard />} />
+              <Route path="/" element={<Dashboard />} />
+              {/* <Route path="/home" element={<Dashboard />} /> */}
               <Route path="/operations" element={<Operations />} />
               <Route path="/memory" element={<Memory />} />
               <Route path="/space" element={<Space />} />
